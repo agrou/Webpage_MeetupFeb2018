@@ -1,0 +1,180 @@
+baseurl: "http://www.dsup.org/FCUL_2018/"
+title: "DSUP"
+canonifyurls: true
+theme: "hugo-conference"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+GoogleAnalytics: "UA-112669010-1"
+
+params:
+  # Conference info
+  Name: "DS Unplugged"
+  Description: "A 1 day data science event with a workshop included"
+  Date: "February 9"
+  #Price: "10€ for students" # If your event is free, just comment this line
+  Venue: "FCiências.ID"
+  Address: "FCiências.ID, Faculdade de Ciências, Universidade de Lisboa"
+  City:  "Lisbon"
+  State: "Portugal"
+  #Images: ["/img/badge.jpg"]
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+  Sections:
+    - about
+    - location
+    - speakers
+    - schedule
+    - sponsors
+    - partners
+    - contact
+
+  # Titles which you can translate to other languages
+  Titles:
+    about: "About"
+    location: "Location"
+    speakers: "Speakers"
+    schedule: "Schedule"
+    sponsors: "Sponsors"
+    partners: "Partners"
+    contact: "Contact"
+
+  # The Call To Action button at the header,
+  # If you don't want this, just remove the callToAction property.
+  CallToAction:
+    text: "Register now!"
+    link: "https://goo.gl/forms/YttkzCFtd9qDP60J2"
+
+  # Fork me on GitHub, if you don't want this, just remove the forkButton property
+  #ForkButton:
+    #repository: "https://github.com/jweslley/hugo-conference/"
+
+  # List of Sponsors
+  Sponsors:
+   - name: "ilustat"
+     logo: "/img/V-Multi-Color-1.svg"
+     url: "https://ilustat.org"
+
+  # List of Partners
+  Partners:
+    - name: "DEIO-FCUL"
+      logo: "/img/Ciencias_Logo.png"
+      url: "https://ciencias.ulisboa.pt/node/3972"
+    - name: "CEAUL"
+      logo: "/img/logoCEAUL.jpg"
+      url: "https://ciencias.ulisboa.pt/pt/ceaul-centro-de-estat%C3%ADstica-e-aplica%C3%A7%C3%B5es-da-universidade-de-lisboa"
+
+  # The entire schedule
+  Schedule:
+    - name: "Registration"
+      time: "9h00"
+      
+    - name: "Professor Marília Antunes & Saghir Bashir"
+      presentation:
+        title: "Welcome and Introduction"
+        #description: ""
+        time: "9h30"
+
+    - name: "Saghir Bashir"
+      #photo: "/img/IDEIA_MEETUP.jpg"
+      bio: "Data Scientist at ilustat and Founder of DS Unplugged meetup. Saghir has over 20 years of international experience in statistics and data science. He has a PhD in Biostatistics and Epidemiology. His professional experience includes working in the public and private sectors for global corporations, and agencies of the European Union and World Health Organisation. Currently he works as a data scientist consultant and trainer."
+      company: "ilustat"
+      link:
+        href: "http://github.com/saghirb"
+        text: "@saghirb"
+      presentation:
+        title: "Workshop: Data Science in Practice"
+        description: "This workshop is a pen and paper exercise based on a real-life example. The participants will be guided to discuss some of the challenges and pitfalls when working with data and statistics (no laptops needed)."
+        time: "9h45"
+
+    - name: "Lunch"
+      time: "12h30"
+
+    - name: "Carlos Rodrigues"
+      #photo: "/img/speaker.jpg"
+      bio: "Data Scientist at Marionete. Carlos has a master in Electronic and Computer Engineering from FEUP. His interest for Data Science was sparked during university when he did a master thesis about Predictive modelling. Recently he was invited to become a member of the program committee for EPIA (a conference for Artificial Intelligence). Currently, Carlos works at Marionete, a consultancy company and he is leading an Artificial Intelligence initiative in the Cyber Security field for a German multinational client. Previously, Carlos led projects in finance and automotive industry, also for key players in the industry."
+      company: "Marionete"
+      link:
+        href: "https://www.linkedin.com/in/carlosrodrigues5/"
+        text: "@carlosrodrigues"
+      presentation:
+        title: "Different challenges from different industries (part I)"
+        description: "In this talk the focus is to discuss challenges inherent to each industry, therefore real cases will be presented and compared."
+        time: "13h30"
+
+    - name: "Hugo Lopes"
+      #photo: "/img/speaker.jpg"
+      bio: "Lead Data Scientist at James. Hugo has a double master's in Aerospacial Engeneering. Before entering the Data Science world he had more than 4 years of experience working with projects from the European Spacial Agency. Currently he works with Artificial Intelligence for Credit Risk, with the aim of helping banks make the best decisions on loans attribution."
+      company: "James"
+      link:
+        href: "https://www.linkedin.com/in/hugodlopes"
+        text: "@hugodlopes"
+      presentation:
+        title: "Different challenges from different industries (part II)"
+        description: "This presentation will cover Data Science trends and tendencies for the next months and years, following up with a real-life example."
+        #time: "14h00"
+
+    - name: "Pedro Nicolau"
+      #photo: "/img/speaker.jpg"
+      bio: "PhD candidate in Statistics at University of Tromsø (Norway). Pedro was always interested in the natural world and sciences. At the age of 12 he fortuitously discovered the world of birdwatching, which deeply contributed to him to pursue a degree in Biology at the Faculty of Sciences of the University of Lisbon. Realizing the importance of Statistics in Biological sciences, allied with his interest in quantitative ecology, he followed up with a Master's in Biostatistics at the same Faculty. For his thesis, he worked at the British Trust for Ornithology in Norfolk (England), applying generalized additive models on citizen science data. Currently he is about to start a PhD in Statistics, assessing the impact of climate change on the Arctic Tundra."
+      #company: "To be defined"
+      #link:
+       # href: "http://twitter.com/zuck"
+       # text: "@zuck"
+      presentation:
+        title: "Data Science in Ecology: bird migration using citizen science data"
+        description: "In Ecology, citizen science allows for a low-cost efficient way of collecting great amounts of data, very useful in showing large-scale patterns. It is of prime importance to properly process these data and understand their main sources of biases. This presentation will show how data was processed and modeled to unfold the variation of critical aspects in the life cycle of a migratory bird species."
+        time: "14h30"
+        
+    - name: "Coffee-break"
+      time: "15h10"
+
+    - name: "Raquel Ribeiro"
+      #photo: "/img/speaker.jpg"
+      bio: "Senior Data scientist at Feedzai. With a Physics degree from the University of Porto, Raquel went to Cambridge in the UK to earn a Masters of Advanced Studies in Mathematics and a PhD in Theoretical Physics. Her thesis was on decoding subtle patterns drawn in the microwave sky from the oldest light in the universe. She did postdoctoral work on models of dark energy in the US and in the UK, before rendering to the world of Data Science. Raquel has worked as a data scientist for a start up in London, leading the research in her team into forecasting and market segmentation for various businesses and public services. After 10 years abroad, she accepted the challenge to return home to work at Feedzai fighting fraud with the Data Science ninjas."
+      company: "Feedzai"
+      link:
+       href: "https://www.linkedin.com/in/raquelhribeiro/"
+       text: "@raquelribeiro"
+      presentation:
+        title: "Making the payment industry safer with Data Science (part I)"
+        description: "In this presentation Inês and Raquel will tell you how they used their academic background in service of a better world through data science. In particular, they will discuss how to use statistics and machine learning to fight fraud and keep banks and e-commerce safe."
+        time: "15h30"
+        
+    - name: "Inês Teixeira"
+      #photo: "/img/speaker.jpg"
+      bio: "Data Scientist at Feedzai. After completing her studies in Aerospace Engineering in Portugal, Inês started off as a Software and Applications developer, working for companies such as NAV, Thales and finally Airbus in the United Kingdom, ranging topics from Airspace Optimisation to Image Processing in Image Change Detection. She started growing more and more interested in the realm of Machine Learning and its applications, starting off by developing machine learning models in the context of Image Processing. After discovering about Feedzai, the team that was being built and the work that was being performed on Fraud detection, Inês decided to go back to Portugal and join the growing team."
+      company: "Feedzai"
+      link:
+        href: "https://www.linkedin.com/in/inessalavisateixeira/"
+        text: "@inesteixeira"
+      presentation:
+        title: "Making the payment industry safer with Data Science (part II)"
+        description: ""
+        #time: "15h30"
+        
+    - name: "José Barros"
+      #photo: "/img/speaker.jpg"
+      bio: "Business Analyst at SDG. José graduated with a degree/masters in Theoretical Physics from the University of Lisbon followed by a PhD in Network Science at Cranfield University (UK). He is specialised in Complex Systems Analysis."
+      company: "SDG Group"
+      link:
+        href: "https://www.linkedin.com/in/josé-barros-77b85739"
+        text: "@josebarros"
+      presentation:
+        title: "Academic Mind in the Industry"
+        description: "There are many opportunities for Portuguese students after finishing university. After his degree in physics, during the recent financial crisis, José took the opportunity to study for a PhD in United Kingdom before returning to Portugal. In this presentation he will describe the journey from finding the PhD and funding to studying in the UK, and his professional life in Lisbon."
+        time: "16h10"
+        
+    - name: "Discussion: All the presenters"
+      #photo: "/img/speaker.jpg"
+      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      #company: "Apple, Inc."
+      #link:
+       # href: "http://twitter.com/woz"
+       # text: "@woz"
+      presentation:
+        title: "Careers in Statistics and Data Science"
+        description: "Participants can ask questions to the panel"
+        time: "16h40"
+        
+    - name: "Close"
+      time: "17h15"
